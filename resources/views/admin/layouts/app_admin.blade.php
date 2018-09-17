@@ -29,11 +29,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{route('admin.index')}}">Панель</a>
+                        </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Блог</a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="{{route('admin.category.index')}}">Категории</a>
-                            <a class="dropdown-item" href="#">Материалы</a>
+                            <a class="dropdown-item" href="{{route('admin.article.index')}}">Материалы</a>
                           </div>
                         </li>
                     </ul>
@@ -76,6 +79,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
